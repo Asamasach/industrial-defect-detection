@@ -5,8 +5,53 @@ Real-time defect detection system for factory production lines, deployed across 
 ## Live Demo
 [Try it on HuggingFace](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
 
-## Overview
-Production-grade defect detection system that runs YOLO-based object detection models on industrial camera feeds in real time. Each domain (textile, glass, automotive, packaging) uses a dedicated model with domain-specific preprocessing and post-processing.
+---
+
+## Factory Defect Detection
+
+### Glass Defect Detection (Car Rear Glass)
+
+<video src="assets/car-rear-glass.mp4" controls width="720"></video>
+
+### PVB Film Inspection
+
+<video src="assets/pvb-film.mp4" controls width="720"></video>
+
+### Textile Defect Detection (Jean Stenter)
+Real-time denim fabric inspection on stenter production line.
+
+[Watch demo on HuggingFace](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
+
+### Bottle Inspection
+Automated bottle defect detection on high-speed production line.
+
+[Watch demo on HuggingFace](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
+
+### Pen Inspection
+Surface defect detection for pen manufacturing line.
+
+[Watch demo on HuggingFace](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
+
+---
+
+## Shipment Detection
+
+### Stationary Barcode Detection (YOLO)
+
+<video src="assets/stationary-shipment-detection-barcode-yolo.mp4" controls width="720"></video>
+
+### Stationary Object Detection
+
+<video src="assets/stationary-shipment-detection-object.mp4" controls width="720"></video>
+
+---
+
+## 3D Vision & VLM
+
+- **3D Reconstruction & Calibration:** Multi-camera calibration, lens distortion correction, coordinate frame registration for industrial inspection setups
+- **Vision-Language Models:** Benchmarking VLMs (GPT-4V, Qwen-VL, LLaVA) for zero-shot industrial defect classification and grading. See [VLM Evaluation Kit](https://github.com/asamasach/vlm-evaluation-kit)
+
+---
 
 ## Architecture
 ```
@@ -23,10 +68,11 @@ Camera Feed --> Preprocessing --> YOLO Inference --> Post-processing --> REST AP
 - Integrated with [Monitait.com](https://monitait.com) for live monitoring
 
 ## Domains
-- Textile: fabric defect detection (holes, stains, pattern breaks)
-- Glass: surface scratch and bubble detection
-- Automotive: paint defect and assembly verification
-- Packaging: label alignment and seal integrity
+- **Textile:** fabric defect detection (holes, stains, pattern breaks)
+- **Glass:** surface scratch and bubble detection
+- **Automotive:** paint defect and assembly verification
+- **Packaging:** label alignment and seal integrity
+- **Shipment:** barcode and object detection for logistics
 
 ## Tech Stack
 - **Inference:** YOLO (v5/v8/v11), ONNX Runtime
