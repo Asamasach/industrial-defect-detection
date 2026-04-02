@@ -2,6 +2,12 @@
 
 Real-time defect detection system for factory production lines, deployed across 100+ industrial inspection projects.
 
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org)
+[![C++](https://img.shields.io/badge/C++-17-orange)](https://isocpp.org)
+[![ONNX](https://img.shields.io/badge/ONNX_Runtime-Inference-green)](https://onnxruntime.ai)
+[![Docker](https://img.shields.io/badge/Docker-Deployed-blue)](https://docker.com)
+[![Demo](https://img.shields.io/badge/HuggingFace-Live_Demo-yellow)](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
+
 ## Live Demo
 [Try it on HuggingFace](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
 
@@ -46,10 +52,12 @@ Surface defect detection for pen manufacturing line.
 
 ---
 
-## 3D Vision & VLM
+## 3D Vision, VLM & Other Projects
 
-- **3D Reconstruction & Calibration:** Multi-camera calibration, lens distortion correction, coordinate frame registration for industrial inspection setups
-- **Vision-Language Models:** Benchmarking VLMs (GPT-4V, Qwen-VL, LLaVA) for zero-shot industrial defect classification and grading. See [VLM Evaluation Kit](https://github.com/asamasach/vlm-evaluation-kit)
+Additional projects including 3D reconstruction, multi-camera calibration, vision-language model evaluation, and auto-labeling pipelines are available under NDA.
+
+**For demos, technical details, or collaboration inquiries, please contact me directly:**
+s.mahdi.sadat.hosseini@gmail.com
 
 ---
 
@@ -58,21 +66,6 @@ Surface defect detection for pen manufacturing line.
 Camera Feed --> Preprocessing --> YOLO Inference --> Post-processing --> REST API / HMI
                                     (ONNX Runtime)
 ```
-
-## Features
-- Real-time inference using ONNX Runtime (C++ and Python)
-- Per-domain dedicated models with optimized thresholds
-- REST API endpoints for each model
-- Docker-based deployment with CI/CD (Jenkins, Git)
-- Model evaluation: precision, recall, F1, mAP tracking
-- Integrated with [Monitait.com](https://monitait.com) for live monitoring
-
-## Domains
-- **Textile:** fabric defect detection (holes, stains, pattern breaks)
-- **Glass:** surface scratch and bubble detection
-- **Automotive:** paint defect and assembly verification
-- **Packaging:** label alignment and seal integrity
-- **Shipment:** barcode and object detection for logistics
 
 ## Tech Stack
 - **Inference:** YOLO (v5/v8/v11), ONNX Runtime
