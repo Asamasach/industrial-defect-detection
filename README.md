@@ -8,6 +8,14 @@ Real-time defect detection system for factory production lines, deployed across 
 [![Docker](https://img.shields.io/badge/Docker-Deployed-blue)](https://docker.com)
 [![Demo](https://img.shields.io/badge/HuggingFace-Live_Demo-yellow)](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
 
+## Impact
+
+- **100+** industrial inspection projects delivered
+- **Over 99% uptime** for QC machines that have inspected **more than 1 billion goods** across various industries
+- **20 inspection machines** in production with improved accuracy
+- **mAP@0.5 above 92% at 60 fps** on edge devices (int8 / fp16), with class imbalance of about 1:500 over 50,000+ images
+- **250,000+ annotations** collected on the [ai-trainer.monitait.com](https://ai-trainer.monitait.com) platform
+
 ## Live Demo
 [Try it on HuggingFace](https://huggingface.co/spaces/smartfalcon-ai/Industrial-Defect-Detection)
 
