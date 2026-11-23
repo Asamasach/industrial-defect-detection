@@ -65,7 +65,7 @@ Surface defect detection for pen manufacturing line.
 Additional projects including 3D reconstruction, multi-camera calibration, vision-language model evaluation, and auto-labeling pipelines are available under NDA.
 
 **For demos, technical details, or collaboration inquiries, please contact me directly:**
-s.mahdi.sadat.hosseini@gmail.com
+s.mehdi.sadat.h@gmail.com
 
 ---
 
